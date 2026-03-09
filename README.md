@@ -1,210 +1,212 @@
-🎮 Rock Paper Scissors – Java Console Game
-📌 Project Overview
+# 🎮 Rock Paper Scissors -- Java Console Game
 
-This project is a console-based Rock Paper Scissors game implemented in Java where a user plays against the computer. The program takes the user's choice, generates a random choice for the computer, and determines the winner based on the classic game rules.
+## 📌 Project Overview
 
-This project demonstrates core Java programming concepts such as user input, conditional logic, random number generation, and method usage.
+This project is a **console-based Rock Paper Scissors game implemented
+in Java** where a user plays against the computer. The program takes the
+user's choice, generates a random choice for the computer, and
+determines the winner based on the classic game rules.
 
-🎯 Game Rules
+This project demonstrates **core Java programming concepts** such as: -
+User input handling - Conditional logic - Random number generation -
+Method usage - Basic game logic implementation
 
-The rules of Rock Paper Scissors are simple:
+------------------------------------------------------------------------
 
-Player Choice	Computer Choice	Result
-Rock	Scissors	Rock Wins
-Scissors	Paper	Scissors Wins
-Paper	Rock	Paper Wins
-Same	Same	Draw
+# 🎯 Game Rules
 
-The game compares the player's input with the computer's randomly generated choice and declares the winner.
+  Player Choice   Computer Choice   Result
+  --------------- ----------------- ---------------
+  Rock            Scissors          Rock Wins
+  Scissors        Paper             Scissors Wins
+  Paper           Rock              Paper Wins
+  Same            Same              Draw
 
-⚙️ How the Program Works
-1️⃣ Display Game Menu
+The game compares the **player's input with the computer's randomly
+generated choice** and declares the winner.
+
+------------------------------------------------------------------------
+
+# ⚙️ How the Program Works
+
+## 1️⃣ Display Game Menu
 
 The program first displays the available options:
 
-1. Rock
-2. Paper
-3. Scissors
-2️⃣ Take User Input
+1.  Rock\
+2.  Paper\
+3.  Scissors
 
-The program uses the Scanner class to read the user's choice from the console.
+------------------------------------------------------------------------
+
+## 2️⃣ Take User Input
+
+The program uses the **Scanner class** to read the user's choice from
+the console.
 
 The input must be within the range:
 
-1 – 3
+`1 – 3`
 
 If the input is outside this range, the program prints:
 
-Invalid choice
-3️⃣ Generate Computer Choice
+`Invalid choice`
 
-The computer generates a random number between 1 and 3 using:
+------------------------------------------------------------------------
 
-Math.random()
+## 3️⃣ Generate Computer Choice
+
+The computer generates a random number between **1 and 3** using:
+
+`Math.random()`
 
 The generated number is mapped to a game option:
 
-Number	Choice
-1	Rock
-2	Paper
-3	Scissors
-4️⃣ Display Both Choices
+  Number   Choice
+  -------- ----------
+  1        Rock
+  2        Paper
+  3        Scissors
 
-The program prints:
+------------------------------------------------------------------------
 
-Player's choice
-
-Computer's choice
+## 4️⃣ Display Both Choices
 
 Example output:
 
-The choice Player entered : Rock
-The choice Computer entered : Paper
-5️⃣ Determine the Winner
+    The choice Player entered : Rock
+    The choice Computer entered : Paper
 
-The winner is determined using conditional statements (if-else) that check combinations of player and computer choices.
+------------------------------------------------------------------------
 
-Example logic:
+## 5️⃣ Determine the Winner
 
-Rock beats Scissors
-Scissors beats Paper
-Paper beats Rock
+The winner is determined using **conditional statements (`if-else`)**.
 
-If both selections are the same, the result is a Draw.
+Game logic:
 
-6️⃣ Play Again Feature
+-   Rock beats Scissors\
+-   Scissors beats Paper\
+-   Paper beats Rock
+
+If both selections are the same, the result is a **Draw**.
+
+------------------------------------------------------------------------
+
+## 6️⃣ Play Again Feature
 
 After each round, the program asks:
 
-Want to play again (Y--Yes) or (N--No)
+`Want to play again (Y--Yes) or (N--No)`
 
-If the player enters Y, the game runs again.
+If the player enters **Y**, the game runs again.
 
-🧠 Concepts Used in This Project
-Concept	Description
-Java Methods	A separate method is used to generate the computer's random choice.
-Scanner Class	Used to read user input from the console.
-Random Number Generation	Math.random() generates the computer's move.
-Conditional Statements	if-else is used to determine the game outcome.
-Method Calls	The randomNumber() method is called from main().
-Boolean Logic	Used to validate input range and check winner conditions.
-Recursion	The main() method calls itself when the user wants to play again.
-User Interaction	Console messages guide the user through the game.
-📚 Concepts Learned from This Project
+------------------------------------------------------------------------
 
-While building this project, the following programming skills were practiced:
+# 🧠 Concepts Used in This Project
 
-✔ Console Input Handling
+  Concept                    Description
+  -------------------------- ------------------------------------------------------
+  Java Methods               Method used to generate the computer's random choice
+  Scanner Class              Used to read user input
+  Random Number Generation   `Math.random()` generates computer move
+  Conditional Statements     `if-else` determines winner
+  Method Calls               `randomNumber()` method called from `main()`
+  Boolean Logic              Used to validate input range
+  Recursion                  `main()` method calls itself for replay
+  User Interaction           Console messages guide user
 
-Understanding how to read and process user input.
+------------------------------------------------------------------------
 
-✔ Random Number Generation
+# 📚 Concepts Learned
 
-Learning how to simulate computer decisions using random numbers.
-
-✔ Decision Making in Programs
-
-Using conditional statements to implement real-world logic.
-
-✔ Modular Programming
-
-Separating functionality into methods to make code more organized.
-
-✔ Game Logic Implementation
-
-Designing logic for a simple interactive game.
-
+✔ Console Input Handling\
+✔ Random Number Generation\
+✔ Decision Making using Conditional Statements\
+✔ Modular Programming using Methods\
+✔ Implementing Game Logic\
 ✔ Program Flow Control
 
-Managing how the program moves from one step to another.
+------------------------------------------------------------------------
 
-🖥 Example Output
-Welcome to Rock Paper Scissors
-1. Rock
-2. Paper
-3. Scissors
+# 🖥 Example Output
 
-Enter your choice: 1
+    Welcome to Rock Paper Scissors
 
-The choice Player entered:
-Rock
+    1. Rock
+    2. Paper
+    3. Scissors
 
-The choice Computer entered:
-Scissors
+    Enter your choice: 1
 
-Player Win! (Rock Win)
+    The choice Player entered:
+    Rock
 
-Want to play again (Y--Yes) or (N--No):
-🚀 Possible Improvements (Future Enhancements)
+    The choice Computer entered:
+    Scissors
 
-This project can be extended in several ways to make it more advanced.
+    Player Win! (Rock Win)
 
-1️⃣ Score Tracking System
+    Want to play again (Y--Yes) or (N--No):
 
-Add a scoring system to keep track of:
+------------------------------------------------------------------------
 
-Player Score
-Computer Score
+# 🚀 Future Enhancements
 
-Example:
+### 1️⃣ Score Tracking System
 
-Player Score: 3
-Computer Score: 2
-2️⃣ Best of 5 Mode
-
-Instead of playing indefinitely, create a Best of 5 match.
-
-The first to reach 3 wins becomes the final winner.
-
-3️⃣ Input Validation Loop
-
-Instead of ending the program on invalid input, repeatedly ask the user until they enter a valid number.
+Track player and computer scores.
 
 Example:
 
-Invalid input! Please enter a number between 1 and 3.
-4️⃣ Switch Statement Implementation
+    Player Score: 3
+    Computer Score: 2
 
-Replace multiple if-else statements with switch statements for cleaner code.
+### 2️⃣ Best of 5 Mode
 
-5️⃣ Graphical User Interface (GUI)
+Game ends when a player wins **3 out of 5 rounds**.
 
-Convert the console game into a GUI application using Java Swing or JavaFX.
+### 3️⃣ Input Validation Loop
 
-Features could include:
+Ask for input again if the user enters an invalid number.
 
-Buttons for Rock, Paper, Scissors
+### 4️⃣ Switch Statement Implementation
 
-Scoreboard display
+Replace `if-else` with `switch` for cleaner code.
 
-Game animations
+### 5️⃣ GUI Version
 
-6️⃣ Multiplayer Mode
+Create a graphical version using **Java Swing or JavaFX**.
 
-Allow two players to play against each other instead of playing against the computer.
+### 6️⃣ Multiplayer Mode
 
-7️⃣ Game Statistics
+Allow **two players to play**.
 
-Track statistics such as:
+### 7️⃣ Game Statistics
 
-Total games played
+Track: - Total games played - Player win percentage - Computer win
+percentage
 
-Player win percentage
+------------------------------------------------------------------------
 
-Computer win percentage
+# 📂 Project Structure
 
-📂 Project Structure
-RockPaperScissors
-│
-├── RPS.java
-└── README.md
-🎓 Learning Outcome
+    RockPaperScissors
+    │
+    ├── RPS.java
+    └── README.md
 
-This project helps beginners understand how to combine multiple core Java concepts to build a working interactive program. It serves as a foundation for building more complex applications in the future.
+------------------------------------------------------------------------
 
-👨‍💻 Author
+# 🎓 Learning Outcome
 
-Ananya G C Kundur
+This project demonstrates how **multiple core Java concepts can be
+combined to build an interactive console application**.
 
-Computer Science Engineering Student
-Learning Java, Data Structures, and Software Development
+------------------------------------------------------------------------
+
+# 👨‍💻 Author
+
+**Ananya G C Kundur**\
+Computer Science Engineering Student\
+Learning **Java, Data Structures, and Software Development**
