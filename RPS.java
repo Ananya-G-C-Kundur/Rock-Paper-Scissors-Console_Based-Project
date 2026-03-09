@@ -83,6 +83,7 @@ public class RPS {
         else 
         {
             System.out.println("Invalid choice");
+            main(args);
         }
         
 
